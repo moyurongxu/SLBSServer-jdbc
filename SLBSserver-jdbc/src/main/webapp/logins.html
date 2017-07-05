@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>后台登陆</title>
+		<link rel="stylesheet" href="static/css/login.css" />
+		<script src="static/js/jquery.js"></script>
+		<script src="static/js/avalon.js"></script>
+		<script src="static/js/commons.js"></script>
+		<script src="logins.js"></script>
+	</head>
+	<body  ms-controller="root" id="login">
+		<div id="login_bg" style="background-position: 40.9334% 10%;"></div>
+		<div id="login_content" class="contruct">
+		    <div id="login_content_logo" class="container"><img src="static/img/logo_large.png" width="677" height="298"></div>
+		    <div id="login_content_log_02">
+		        <form name="form">
+		        <div id="login_input1"><input id="login_input11" type="text" placeholder="用户名" ms-duplex="@userid" autocomplete="off"></div>
+		        <div id="login_input2"><input id="login_input12" type="password"  placeholder="密码" ms-duplex="@password" autocomplete="off"></div>
+		        <p id="login_tip"></p>
+		        <div id="login_input4">登&nbsp;&nbsp;&nbsp;&nbsp;录<input type="button"ms-click="@submit"></div>
+		        </form>
+		    </div>
+		</div>
+    </body>
+</html>
